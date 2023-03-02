@@ -55,8 +55,8 @@ export function ticketStatus(tickets, ticketId) {
  * @returns {string} ticket status
  */
 export function simpleTicketStatus(tickets, ticketId) {
-  let name = tickets[ticketId]
-  if (name === undefined || name === null) {
+  let name = tickets[ticketId] ?? null;
+  if (name === null) {
       return "invalid ticket !!!";
   } else {
       return name;
