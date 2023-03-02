@@ -10,7 +10,12 @@
  * @returns {Visitor} the visitor that was created
  */
 export function createVisitor(name, age, ticketId) {
-  throw new Error('Please implement the createVisitor function.');
+  const visitor = {
+      name: name,
+      age: age,
+      ticketId: ticketId
+  };
+  return visitor;
 }
 
 /**
